@@ -358,13 +358,13 @@ async function setupViewer(){
         footerContainer.style.display = "flex"
         configAnimation()
 
-        if (!musicPlay) {
-            audio.play()
-            audio.volume = 0.1
-            audio.loop = true
-            musicPlay = true
+        // if (!musicPlay) {
+        //     audio.play()
+        //     audio.volume = 0.1
+        //     audio.loop = true
+        //     musicPlay = true
             
-        }
+        // }
         // customScrollingEnabled = false
     })
     const tlExplore = gsap.timeline()
@@ -714,21 +714,21 @@ async function setupViewer(){
 
 /////////////////////////////////////////////////////////////////////////
 ///// BACKGROUND MUSIC
-let firstPlay = true
-let audio = new Audio();
-audio.src = './assets/sounds/music_loop.mp3'
-let musicPlay = false
-function playMusic() {
-    if (!musicPlay) {
-        audio.play()
-        audio.volume = 0.1
-        audio.loop = true
-        musicPlay = true
-    } else {
-        audio.pause()
-        musicPlay = false
-    }
-}
+// let firstPlay = true
+// let audio = new Audio();
+// audio.src = './assets/sounds/music_loop.mp3'
+// let musicPlay = false
+// function playMusic() {
+//     if (!musicPlay) {
+//         audio.play()
+//         audio.volume = 0.1
+//         audio.loop = true
+//         musicPlay = true
+//     } else {
+//         audio.pause()
+//         musicPlay = false
+//     }
+// }
 
 document.querySelector('.music--control')?.addEventListener('click', () => {
     playMusic()
